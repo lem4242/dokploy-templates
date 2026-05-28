@@ -27,7 +27,7 @@ jobs:
           cache-dependency-path: app/pnpm-lock.yaml
 
       - name: Install dependencies
-        run: cd app && pnpm install
+        run: cd app && pnpm install --config.approve-builds=true
 
       - name: Build
         run: cd app && pnpm build
