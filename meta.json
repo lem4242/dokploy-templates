@@ -1,5 +1,18 @@
 [
   {
+    "id": "obot",
+    "name": "Obot",
+    "version": "latest",
+    "description": "Open source MCP platform for hosting, registering and gatewaying MCP servers, with a built-in AI chat client.",
+    "logo": "obot.svg",
+    "links": {
+      "github": "https://github.com/obot-platform/obot",
+      "website": "https://obot.ai/",
+      "docs": "https://docs.obot.ai/"
+    },
+    "tags": ["ai", "mcp", "agents"]
+  },
+  {
     "id": "ackee",
     "name": "Ackee",
     "version": "latest",
