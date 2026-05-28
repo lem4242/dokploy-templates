@@ -3,6 +3,7 @@ main_domain = "${domain}"
 bootstrap_token = "${password:32}"
 
 [config]
+mounts = []
 
 [[config.domains]]
 serviceName = "obot"
@@ -10,9 +11,7 @@ port = 8080
 host = "${main_domain}"
 
 [config.env]
-env = [
-  "OPENAI_API_KEY=",
-  "OBOT_BOOTSTRAP_TOKEN=${bootstrap_token}",
-  "OBOT_SERVER_HOSTNAME=${main_domain}",
-  "OBOT_SERVER_ENABLE_AUTHENTICATION=true"
-]
+OBOT_BOOTSTRAP_TOKEN = "${bootstrap_token}"
+OBOT_SERVER_HOSTNAME = "${main_domain}"
+OBOT_SERVER_ENABLE_AUTHENTICATION = "true"
+OPENAI_API_KEY = ""
