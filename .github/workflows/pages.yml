@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Configure pnpm builds
-        run: echo "approve-builds=true" > app/.npmrc
+        run: echo -e "onlyBuiltDependencies:\n  - esbuild" > app/pnpm-workspace.yaml
 
       - uses: pnpm/action-setup@v3
         with:
