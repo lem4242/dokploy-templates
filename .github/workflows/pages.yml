@@ -17,7 +17,11 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Configure pnpm builds
-        run: echo -e "onlyBuiltDependencies:\n  - esbuild" > app/pnpm-workspace.yaml
+        run: |
+          cat > app/pnpm-workspace.yaml << 'EOF'
+          onlyBuiltDependencies:
+            - esbuild
+          EOF
 
       - uses: pnpm/action-setup@v3
         with:
