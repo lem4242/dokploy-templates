@@ -9,9 +9,6 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": ["esbuild"]
-  },
   "dependencies": {
     "@codemirror/autocomplete": "^6.19.1",
     "@codemirror/lang-json": "^6.0.2",
