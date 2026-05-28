@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  obot:
+    image: ghcr.io/obot-platform/obot:latest
+    restart: unless-stopped
+    volumes:
+      - obot-data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 8080
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OBOT_SERVER_ENABLE_AUTHENTICATION=true
+      - OBOT_BOOTSTRAP_TOKEN=${OBOT_BOOTSTRAP_TOKEN}
+      - OBOT_SERVER_HOSTNAME=${main_domain}
+
+volumes:
+  obot-data: {}
