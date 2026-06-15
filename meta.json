@@ -1,29 +1,5 @@
 [
   {
-    "id": "obot",
-    "name": "Obot",
-    "version": "latest",
-    "description": "Open source MCP platform for hosting, registering and gatewaying MCP servers, with a built-in AI chat client.",
-    "logo": "obot.svg",
-    "links": {
-      "github": "https://github.com/obot-platform/obot",
-      "website": "https://obot.ai/",
-      "docs": "https://docs.obot.ai/"
-    },
-    "tags": ["ai", "mcp", "agents"]
-  },
-  {
-    "id": "google-workspace-mcp",
-    "name": "Google Workspace MCP",
-    "version": "0.1.0",
-    "description": "MCP server exposing Gmail, Drive, Docs, Sheets, Slides, and Calendar as tools over HTTP, with per-user Google OAuth 2.1.",
-    "logo": "google-workspace-mcp.svg",
-    "links": {
-      "website": "https://workspace.google.com/"
-    },
-    "tags": ["ai", "mcp", "google", "productivity"]
-  },
-  {
     "id": "ackee",
     "name": "Ackee",
     "version": "latest",
@@ -2873,6 +2849,24 @@
     ]
   },
   {
+    "id": "google-workspace-mcp",
+    "name": "Google Workspace MCP",
+    "version": "0.1.0",
+    "description": "MCP server exposing Gmail, Drive, Docs, Sheets, Slides, and Calendar as tools over HTTP, with per-user Google OAuth 2.1.",
+    "logo": "google-workspace-mcp.svg",
+    "links": {
+      "github": "https://github.com/taylorwilsdon/google_workspace_mcp",
+      "website": "https://workspacemcp.com",
+      "docs": "https://github.com/taylorwilsdon/google_workspace_mcp#readme"
+    },
+    "tags": [
+      "ai",
+      "mcp",
+      "google",
+      "productivity"
+    ]
+  },
+  {
     "id": "gotenberg",
     "name": "Gotenberg",
     "version": "latest",
@@ -4474,6 +4468,23 @@
       "api",
       "notifications",
       "self-hosted"
+    ]
+  },
+  {
+    "id": "obot",
+    "name": "Obot",
+    "version": "latest",
+    "description": "Open source MCP platform for hosting, registering and gatewaying MCP servers, with a built-in AI chat client.",
+    "logo": "obot.svg",
+    "links": {
+      "github": "https://github.com/obot-platform/obot",
+      "website": "https://obot.ai/",
+      "docs": "https://docs.obot.ai/"
+    },
+    "tags": [
+      "ai",
+      "mcp",
+      "agents"
     ]
   },
   {
