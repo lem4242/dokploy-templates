@@ -18,13 +18,6 @@ services:
       - GOOGLE_OAUTH_CLIENT_ID=${GOOGLE_OAUTH_CLIENT_ID}
       - GOOGLE_OAUTH_CLIENT_SECRET=${GOOGLE_OAUTH_CLIENT_SECRET}
       - GOOGLE_OAUTH_REDIRECT_URI=${GOOGLE_OAUTH_REDIRECT_URI}
-    labels:
-      - traefik.enable=true
-      - traefik.http.routers.google-workspace-mcp-secure.rule=Host(`${MAIN_DOMAIN}`)
-      - traefik.http.routers.google-workspace-mcp-secure.entrypoints=websecure
-      - traefik.http.routers.google-workspace-mcp-secure.tls.certresolver=letsencrypt
-      - traefik.http.routers.google-workspace-mcp-secure.service=google-workspace-mcp-secure
-      - traefik.http.services.google-workspace-mcp-secure.loadbalancer.server.port=8000
 
 volumes:
   store_creds: {}
