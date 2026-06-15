@@ -13,6 +13,7 @@ certResolver = "letsencrypt"
 
 [config.env]
 WORKSPACE_MCP_BASE_URI = "https://${main_domain}"
+WORKSPACE_EXTERNAL_URL = "https://${main_domain}"
 MCP_ENABLE_OAUTH21 = "true"
 WORKSPACE_MCP_HOST = "0.0.0.0"
 WORKSPACE_MCP_PORT = "8000"
