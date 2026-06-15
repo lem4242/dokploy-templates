@@ -9,8 +9,6 @@ mounts = []
 serviceName = "obot"
 port = 8080
 host = "${main_domain}"
-tls = true
-certResolver = "letsencrypt"
 
 [config.env]
 OBOT_BOOTSTRAP_TOKEN = "${bootstrap_token}"
