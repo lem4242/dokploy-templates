@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   obot:
-    image: ghcr.io/obot-platform/obot:latest
+    image: ghcr.io/obot-platform/obot:v0.23.0-rc4
     restart: unless-stopped
     volumes:
       - obot-data:/data
