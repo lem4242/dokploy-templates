@@ -13,6 +13,17 @@
     "tags": ["ai", "mcp", "agents"]
   },
   {
+    "id": "google-workspace-mcp",
+    "name": "Google Workspace MCP",
+    "version": "0.1.0",
+    "description": "MCP server exposing Gmail, Drive, Docs, Sheets, Slides, and Calendar as tools over HTTP, with per-user Google OAuth 2.1.",
+    "logo": "google-workspace-mcp.svg",
+    "links": {
+      "website": "https://workspace.google.com/"
+    },
+    "tags": ["ai", "mcp", "google", "productivity"]
+  },
+  {
     "id": "ackee",
     "name": "Ackee",
     "version": "latest",
