@@ -8,10 +8,9 @@ mounts = []
 serviceName = "google-workspace-mcp"
 port = 8000
 host = "${main_domain}"
-tls = true
-certResolver = "letsencrypt"
 
 [config.env]
+MAIN_DOMAIN = "${main_domain}"
 WORKSPACE_MCP_BASE_URI = "https://${main_domain}"
 WORKSPACE_EXTERNAL_URL = "https://${main_domain}"
 MCP_ENABLE_OAUTH21 = "true"
